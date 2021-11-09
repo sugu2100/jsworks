@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>상수(Constant variable)</title>
+</head>
+<body>
+    <h3>상수(Constant variable)</h3>
+
+    <script>
+        //var MONTH = 12;
+        const MONTH = 12;
+
+        //MONTH = 13;  //상수는 변경할 수 없음
+
+        document.write("1년은 " + MONTH + "달이 있습니다.<br>");
+
+        //원의 넓이 = PI x 반지름 x 반지름
+        //원의 둘레 = PI x 2 x 반지름
+        const PI = 3.14;  //상수
+        var radius = 7;   //반지름 변수
+        var area, circum;  //넓이, 둘레
+
+        //PI = 3;  변경 불가
+
+        //계산하기
+        area = PI * radius * radius;
+        circum = 2 * PI * radius;
+
+        //출력하기
+        document.write("원의 넓이 :  " + area + "<br>");
+        document.write("원의 둘레 :  " + circum);
+    </script>
+</body>
+</html>
