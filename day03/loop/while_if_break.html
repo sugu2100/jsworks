@@ -4,20 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>반복문 - while</title>
+    <title>반복 조건문</title>
 </head>
 <body>
-    <h2>반복문</h2>
-
+    
     <script>
-        //변수 생성
         var n = 0;
 
-        while(n < 10){  //종료식(조건식)
-            n += 1;  //n = n + 1; n++;   //증감값
-            document.write("Hello~" + n + "<br>");
+        while(true){
+            n += 1;
+            if(n > 10)  //11 > 10  -> true
+                break;
+            document.write(n + "<br>"); 
         }
-        document.write("프로그램 종료");
+
     </script>
 </body>
 </html>

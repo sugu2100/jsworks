@@ -5,10 +5,11 @@
 
    while(true) ~ if ~ break (반복 조건문)
   */
+   var key = "";  //문자 초기화(공백 문자)
 
    while(true){
     //입력
-    var key = prompt("계속 반복할까요?", "y/n, n=종료");
+    key = prompt("계속 반복할까요?", "y/n, n=종료");
 
     //처리
     if(key == 'y' || key == 'Y'){
@@ -22,4 +23,4 @@
         alert("키를 잘못 눌렀습니다.");
     }
    }
-   document.write("프로그램 종료!");
+   document.write("반복 종료!");
