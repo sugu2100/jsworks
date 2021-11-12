@@ -14,7 +14,7 @@
 
         for(i = 1; i <= 30; i++){
             //3의 배수를 출력
-            if(i % 3 == 0){
+            if(i % 3 == 0 || i % 5 == 0){
                 count++;    //count = count + 1
                 document.write(i + " ");
             }
@@ -24,7 +24,7 @@
         }
 
         document.write("<br>");
-        document.write("3의 배수의 개수 : " + count);
+        document.write("3의 배수 또는 5의 개수 : " + count);
     </script>
 </body>
 </html>
